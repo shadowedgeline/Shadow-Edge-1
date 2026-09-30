@@ -121,7 +121,21 @@ footer .container{color:rgba(255,255,255,.68)}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Shadow Edge">
     <meta name="twitter:description" content="Official community portal for the Shadow Edge group and The Battlegrounds X.">
-    <meta name="twitter:image" content="https://shadowedgeline.github.io/Shadow-EdgeWiki/shadow-preview.png">
+    <meta name="twitter:image" content="https://shadowedgeline.github.io/Shadow-EdgeWikicd "$HOME\Downloads"
+
+Expand-Archive -Path ".\Shadow-Edge-Site-Wiki-fixed.zip" -DestinationPath ".\Shadow-Edge-Wiki-FIX" -Force
+
+cd ".\Shadow-Edge-Wiki-FIX"
+
+git init
+git branch -M main
+
+git remote remove origin 2>$null
+git remote add origin https://github.com/shadowedgeline/Shadow-EdgeWiki.git
+
+git add -A
+git commit -m "Fix Wiki preview"
+git push -u origin main --force/shadow-preview.png">
 </head>
 <body>
 <header>
