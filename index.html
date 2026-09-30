@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Edge | The Battlegrounds X</title>
+<meta name="description" content="Information about the Shadow Edge community and The Battlegrounds X.">
+<meta property="og:title" content="Shadow Edge | The Battlegrounds X">
+<meta property="og:description" content="Information about the Shadow Edge community and The Battlegrounds X.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shadow Edge">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shadow Edge | The Battlegrounds X">
+<meta name="twitter:description" content="Information about the Shadow Edge community and The Battlegrounds X.">
+<meta name="twitter:image" content="https://shadowedgeline.github.io/Shadow-Edge-/shadow-preview.png">
+<meta property="og:image" content="https://shadowedgeline.github.io/Shadow-Edge-/shadow-preview.png">
+<link rel="icon" type="image/png" href="shadow-logo.png">
+<style>
+:root{--bg:#f4f4f5;--line:rgba(10,10,15,.16);--text:#09090b;--muted:#666872;--shadow:0 18px 55px rgba(0,0,0,.13);--soft-glow:0 0 36px rgba(255,255,255,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;color:var(--text);background:radial-gradient(circle at 50% 0%,#ffffff 0%,#f3f3f4 38%,#cfcfd2 68%,#8c8c91 100%);font-family:Georgia,"Times New Roman",serif}body.menu-open{overflow:hidden}
+
+body:before{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  top:-25%;
+  left:-35%;
+  width:55%;
+  height:150%;
+  pointer-events:none;
+  background:linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,255,255,.04) 35%,
+    rgba(255,255,255,.22) 50%,
+    rgba(255,255,255,.04) 65%,
+    transparent 100%
+  );
+  transform:rotate(18deg);
+  filter:blur(18px);
+  animation:lightSweep 9s ease-in-out infinite;
+}
+
+@keyframes lightSweep{
+  0%,100%{left:-45%;opacity:.25}
+  50%{left:95%;opacity:.8}
+}
+
+body:after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  width:420px;height:420px;
+  left:50%;top:35%;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.13),transparent 68%);
+  filter:blur(30px);
+  pointer-events:none;
+  animation:ambientGlow 10s ease-in-out infinite alternate;
+}
+@keyframes ambientGlow{
+  0%{transform:translate(-65%,-45%) scale(.75);opacity:.35}
+  100%{transform:translate(45%,-55%) scale(1.25);opacity:.8}
+}a{color:inherit;text-decoration:none}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba(255,255,255,.78);border-bottom:1px solid var(--line)}
+nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:700;letter-spacing:.5px;z-index:102}.crest{width:46px;height:46px;position:relative;display:grid;place-items:center;border:1px solid #111;border-radius:14px;background:#fff;box-shadow:0 8px 25px rgba(0,0,0,.12);overflow:hidden}.crest img{width:100%;height:100%;object-fit:cover;display:block}
+.crest:after{
+  content:"";position:absolute;inset:-70%;
+  background:linear-gradient(110deg,transparent 42%,rgba(255,255,255,.75) 50%,transparent 58%);
+  transform:translateX(-45%) rotate(12deg);
+  animation:logoShine 5s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes logoShine{
+  0%,55%{transform:translateX(-55%) rotate(12deg);opacity:0}
+  65%{opacity:1}
+  82%,100%{transform:translateX(55%) rotate(12deg);opacity:0}
+}.nav-wrap{display:flex;align-items:center;gap:12px}.navlinks{display:flex;align-items:center;gap:5px;padding:6px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.72);box-shadow:0 8px 30px rgba(0,0,0,.05)}.navlinks a{padding:10px 14px;border-radius:10px;color:var(--muted);font:600 13px/1 Arial,sans-serif;transition:.2s ease}.navlinks a:hover,.navlinks a:focus-visible{color:#000;background:#f0f0f2}.lang-btn,.menu-btn{border:1px solid #111;background:#111;color:#fff;cursor:pointer;font:700 12px/1 Arial,sans-serif;transition:.2s ease}.lang-btn{padding:12px 14px;border-radius:11px}.lang-btn:hover{background:#fff;color:#111}.menu-btn{display:none;width:44px;height:44px;border-radius:12px;align-items:center;justify-content:center;font-size:20px}.mobile-menu{display:none;position:fixed;inset:77px 14px auto 14px;z-index:99;padding:10px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.96);backdrop-filter:blur(18px);box-shadow:0 20px 60px rgba(0,0,0,.16)}.mobile-menu a{display:block;padding:15px 14px;border-radius:12px;font:600 15px/1 Arial,sans-serif}.mobile-menu a:hover{background:#f0f0f2}.mobile-menu.open{display:block}
+.hero{
+  padding:105px 0 85px;text-align:center;
+  text-shadow:0 2px 18px rgba(255,255,255,.18);
+}.eyebrow{color:#111;font-size:12px;letter-spacing:4px;text-transform:uppercase;margin-bottom:18px}h1{font-size:clamp(48px,8vw,88px);line-height:.95;margin:0 0 20px;letter-spacing:-2px}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-family:Arial,sans-serif;line-height:1.7}.owner{display:block;color:#111;font-family:Arial,sans-serif;font-size:16px;letter-spacing:.4px;margin-top:10px;font-weight:600}.ornament{margin:34px auto 0;display:flex;align-items:center;justify-content:center;gap:12px;color:#111}.ornament:before,.ornament:after{content:"";height:1px;width:100px;background:linear-gradient(90deg,transparent,#111)}.ornament:after{background:linear-gradient(90deg,#111,transparent)}section{padding:70px 0;position:relative}
+section:after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.08));
+  pointer-events:none;
+}.section-title{text-align:center;margin-bottom:38px}.section-title h2{font-size:36px;margin:0 0 10px;letter-spacing:-.4px}.section-title p{margin:0;color:var(--muted);font-family:Arial,sans-serif}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{position:relative;overflow:hidden;padding:30px;min-height:245px;background:linear-gradient(145deg,rgba(255,255,255,.97),rgba(225,225,228,.92));border:1px solid rgba(10,10,15,.18);border-radius:16px;box-shadow:var(--shadow),var(--soft-glow);transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s ease,box-shadow .35s ease}.card:before{content:"";position:absolute;left:18px;right:18px;top:0;height:1px;background:linear-gradient(90deg,transparent,#111,transparent);opacity:.8}.card:hover{transform:translateY(-7px);border-color:rgba(0,0,0,.48);box-shadow:0 22px 60px rgba(0,0,0,.20),0 0 32px rgba(255,255,255,.22)}
+.card:after{
+  content:"";position:absolute;inset:0;border-radius:18px;pointer-events:none;
+  background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);
+  transform:translateX(-110%);transition:transform .7s ease;
+}
+.card:hover:after{transform:translateX(110%)}.card h3{font-size:25px;margin:16px 0 10px}.card p{color:var(--muted);font-family:Arial,sans-serif;font-size:14px;line-height:1.6;min-height:45px}.btn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:11px 16px;border:1px solid #111;border-radius:10px;color:#111;font-family:Arial,sans-serif;font-size:13px;transition:.2s}.btn:hover{background:#111;color:#fff}.creator{max-width:760px;margin:auto;background:#fafafa;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:var(--shadow)}.creator-link{transition:.25s ease;box-shadow:0 8px 24px rgba(0,0,0,.08)}.creator-link:hover{transform:translateY(-3px);border-color:#bbb;box-shadow:0 14px 30px rgba(0,0,0,.16)}.creator-links{display:grid;grid-template-columns:1fr 1fr;gap:14px}.creator-link{padding:20px;background:#fff;border:1px solid var(--line);border-radius:13px;font-family:Arial,sans-serif}.creator-link small{display:block;color:var(--muted);margin-bottom:7px}.creator-link strong{color:#111}.creator-desc{display:block;color:var(--muted);font-size:12px;line-height:1.5;margin-top:8px}.social-row{
+  display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin:10px auto 28px;
+}
+.social-row a{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 17px;
+  border:1px solid rgba(255,255,255,.28);border-radius:11px;
+  background:rgba(10,10,14,.82);color:#fff;
+  font:700 12px/1 Arial,sans-serif;backdrop-filter:blur(14px);
+  box-shadow:0 8px 24px rgba(0,0,0,.22);
+  transition:.25s ease;
+}
+.social-row a:hover{
+  background:#17171d;color:#fff;
+  transform:translateY(-3px);border-color:rgba(255,255,255,.75);
+  box-shadow:0 12px 30px rgba(0,0,0,.32);
+}
+.social-row span{font-size:15px;color:#fff}
+footer{
+  border-top:1px solid rgba(255,255,255,.16);
+  padding:30px 0;font-family:Arial,sans-serif;font-size:13px;
+  color:rgba(255,255,255,.65);
+  background:rgba(0,0,0,.22);
+}
+footer .container{color:rgba(255,255,255,.68)}
+.footer-inner{display:flex;justify-content:space-between;gap:20px}.footer-inner strong{color:#111}
+@media(max-width:800px){.container{width:min(100% - 28px,1120px)}nav{min-height:68px}.crest{width:42px;height:42px;border-radius:12px}.brand{font-size:18px}.navlinks{display:none}.nav-wrap{gap:8px}.menu-btn{display:flex}.hero{padding:72px 0 58px}.hero p{font-size:14px;padding:0 4px}section{padding:52px 0}.section-title{margin-bottom:25px}.section-title h2{font-size:30px}.cards{grid-template-columns:1fr;gap:14px}.card{min-height:auto;padding:25px}.creator-links{grid-template-columns:1fr}.creator{padding:0}.creator-link{min-height:auto;padding:25px}.footer-inner{flex-direction:column;gap:8px}.lang-btn{padding:11px 12px}}
+@media(max-width:430px){.brand span:last-child{font-size:16px}.lang-btn{font-size:11px;padding:10px}.menu-btn{width:42px;height:42px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container"><nav>
+<a class="brand" href="#home"><span class="crest"><img src="shadow-logo.png" alt="Shadow Edge"></span><span>Shadow Edge</span></a>
+<div class="nav-wrap">
+<div class="navlinks"><a href="#community" data-i18n="navCommunity">Community</a><a href="#creator" data-i18n="navCreator">Creator</a><a href="#game" data-i18n="navGame">Game</a></div>
+<button class="lang-btn" id="langBtn" type="button" aria-label="Change language">EN / RU</button>
+<button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+</div></nav></div>
+<div class="mobile-menu" id="mobileMenu"><a href="#community" data-i18n="navCommunity">Community</a><a href="#creator" data-i18n="navCreator">Creator</a><a href="#game" data-i18n="navGame">Game</a></div>
+</header>
+<main id="home">
+<section class="hero"><div class="container">
+<div class="eyebrow">Shadow Edge</div>
+<p data-i18n="heroText">Официальный портал сообщества игры. Здесь собраны основные ссылки на Discord, Roblox-сообщество и страницу игры.</p>
+<div class="owner">Owner HopchikForLife</div>
+<div class="ornament">✦</div>
+</div></section>
+<section id="community" class="reveal"><div class="container">
+<div class="section-title"><h2 data-i18n="communityTitle">Community</h2><p data-i18n="communityText">Присоединяйся к сообществу Shadow Edge.</p></div>
+<div class="cards">
+<article class="card reveal-card"><h3 data-i18n="discordTitle">Discord Server</h3><p data-i18n="discordText">Основной сервер Shadow Edge для общения и новостей.</p><a class="btn" href="https://discord.gg/shadowedge" target="_blank" rel="noopener"><span data-i18n="openDiscord">Open Discord</span> ↗</a></article>
+<article class="card reveal-card"><h3 data-i18n="robloxTitle">Roblox Group</h3><p data-i18n="robloxText">Официальное сообщество Shadow Edge в Roblox.</p><a class="btn" href="https://www.roblox.com/communities/174697800/Shadow-Edge-Studios#!/about" target="_blank" rel="noopener"><span data-i18n="openGroup">Open Group</span> ↗</a></article>
+<article class="card reveal-card" id="game"><h3 data-i18n="gameTitle">The Battlegrounds X</h3><p data-i18n="gameText">Перейти непосредственно на страницу игры в Roblox.</p><a class="btn" href="https://www.roblox.com/games/105120761572110/The-Battlegrounds-X" target="_blank" rel="noopener"><span data-i18n="play">Play on Roblox</span> ↗</a></article>
+</div></div></section>
+<section id="creator" class="reveal"><div class="container">
+<div class="section-title"><h2 data-i18n="creatorTitle">Creator</h2><p data-i18n="creatorText">Ссылки создателя и дополнительные ресурсы.</p></div>
+<div class="creator"><div class="creator-links">
+<a class="creator-link" href="https://discord.gg/K5NN64CmwF" target="_blank" rel="noopener"><small data-i18n="subServer">SUB SERVER CREATOR</small><strong>Dinastiya ↗</strong><span class="creator-desc" data-i18n="creatorDesc">Сервер создателя сайта, самый приятный для общения</span></a>
+<a class="creator-link" href="https://yutafactatised-spec.github.io/YutaBio/" target="_blank" rel="noopener"><small data-i18n="bioCreator">Bio Creator</small><strong data-i18n="yutaBio">Yuta Bio ↗</strong><span class="creator-desc" data-i18n="bioCreatorDesc">Человек поддерживающий сайт и который делает его приятние</span></a>
+</div></div></div></section>
+</main>
+<footer><div class="container footer-inner"><div>Creator <strong>Yuta</strong></div><div>OOO <strong>"VcmLove"</strong></div></div></footer>
+<script>
+const translations={
+ru:{navCommunity:'Community',navCreator:'Creator',navGame:'Game',heroText:'Официальный портал сообщества игры. Здесь собраны основные ссылки на Discord, Roblox-сообщество и страницу игры.',communityTitle:'Community',communityText:'Присоединяйся к сообществу Shadow Edge.',discordTitle:'Discord Server',discordText:'Основной сервер Shadow Edge для общения и новостей.',openDiscord:'Open Discord',robloxTitle:'Roblox Group',robloxText:'Официальное сообщество Shadow Edge в Roblox.',openGroup:'Open Group',gameTitle:'The Battlegrounds X',gameText:'Перейти непосредственно на страницу игры в Roblox.',play:'Play on Roblox',creatorTitle:'Creator',creatorText:'Ссылки создателя и дополнительные ресурсы.',subServer:'SUB SERVER CREATOR',creatorDesc:'Сервер создателя сайта, самый приятный для общения',bioCreator:'Bio Creator',bioCreatorDesc:'A person who supports the website and makes it more enjoyable',yutaBio:'Yuta Bio ↗'},
+en:{navCommunity:'Community',navCreator:'Creator',navGame:'Game',heroText:'Official community portal for the game. Find the main links to Discord, the Roblox community, and the game page here.',communityTitle:'Community',communityText:'Join the Shadow Edge community.',discordTitle:'Discord Server',discordText:'The main Shadow Edge server for chat and news.',openDiscord:'Open Discord',robloxTitle:'Roblox Group',robloxText:'The official Shadow Edge community on Roblox.',openGroup:'Open Group',gameTitle:'The Battlegrounds X',gameText:'Go directly to the game page on Roblox.',play:'Play on Roblox',creatorTitle:'Creator',creatorText:'Creator links and additional resources.',subServer:'SUB SERVER CREATOR',creatorDesc:'The site creator’s server, the most pleasant place to chat',bioCreator:'Bio Creator',bioCreatorDesc:'A person who supports the website and makes it more enjoyable',yutaBio:'Yuta Bio ↗'}};
+let lang=localStorage.getItem('shadowLang')||'en';
+function setLanguage(next){lang=next;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(translations[lang][key])el.textContent=translations[lang][key]});document.getElementById('langBtn').textContent=lang==='ru'?'RU / EN':'EN / RU';localStorage.setItem('shadowLang',lang)}
+document.getElementById('langBtn').addEventListener('click',()=>setLanguage(lang==='ru'?'en':'ru'));
+const menuBtn=document.getElementById('menuBtn');const mobileMenu=document.getElementById('mobileMenu');
+menuBtn.addEventListener('click',()=>{const open=mobileMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open);menuBtn.textContent=open?'×':'☰'});
+mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+setLanguage(lang);
+
+const revealItems=document.querySelectorAll('.reveal,.reveal-card');
+const revealObserver=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+},{threshold:.12});
+revealItems.forEach(item=>revealObserver.observe(item));
+</script>
+</body>
+</html>
